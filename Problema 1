@@ -1,0 +1,30 @@
+# ============================================================
+# PROBLEMA 1
+# ============================================================
+# PREVISÃO E DECOMPOSIÇÃO
+# Entrada(s):
+# Processamento:
+# Saída:
+# IMPLEMENTAÇÃO
+# MICRODEFESA: por que a ordem das condições pode alterar a classificação?
+# ============================================================
+
+nota1 = float(input("Digite a nota 1: "))
+nota2 = float(input("Digite a nota 2: "))
+nota3 = float(input("Digite a nota 3: "))
+
+media = (nota1 + nota2 + nota3) / 3
+
+if media < 4:
+  print(f"Reprovado")
+elif media >= 4 and media < 6:
+  print(f"Recuperaçao")
+elif media >= 6 and media < 9:
+  print(f"Aprovado")
+else:
+  print(f"Aprovado com destaque")
+
+print(f"sua media e: {media}")
+
+# MICRODEFESA: por que a ordem das condições pode alterar a classificação?
+# porque as condiçoes sao testadas de cima para baixo, colocar antes pode impedir que a correta seja testada
